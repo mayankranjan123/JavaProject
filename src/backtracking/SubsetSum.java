@@ -19,7 +19,7 @@ public class SubsetSum {
             }
             System.out.println();
             return;
-        } else if (n == 0) {
+        } else if (n == 0 && sum != 0) {
            return;
         } else {
             subsetSum(a, n - 1, res, sum);
