@@ -4,10 +4,10 @@ public class SubsetSumProblem {
     public static void main(String[] args) {
         int set[] = {2, 1};
         int sum = 3;
-        System.out.println(isSubset(set, set.length, sum));
+        System.out.println(new SubsetSumProblem().isSubset(set, set.length, sum));
     }
 
-    private static boolean isSubset(int[] set, int n, int sum) {
+    public boolean isSubset(int[] set, int n, int sum) {
         boolean t [][] = new boolean[n + 1][sum + 1];
         for (int i = 0; i <= n; i++) {
             for (int j = 0; j <= sum; j++) {
