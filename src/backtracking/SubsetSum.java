@@ -5,8 +5,8 @@ import java.util.List;
 
 public class SubsetSum {
     public static void main(String[] args) {
-        int a[] = new int[] { 2, 4, 2};
-        int sum = 4;
+        int a[] = new int[] { 1, 4, 20, 3, 10, 5};
+        int sum = 33;
         int n = a.length;
         List<Integer> res = new ArrayList<>();
         subsetSum(a, n, res, sum);
