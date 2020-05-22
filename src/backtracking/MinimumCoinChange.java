@@ -7,7 +7,7 @@ public class MinimumCoinChange {
     static List<Integer> result;
     static int min = Integer.MAX_VALUE;
         public static void main(String[] args) {
-            int a[] = new int[] { 2, 4, 5, 6};
+            int a[] = new int[] { 1, 4, 5, 6};
             int sum = 10;
             int n = a.length;
             List<Integer> res = new ArrayList<>();
@@ -22,7 +22,7 @@ public class MinimumCoinChange {
                     result = new ArrayList<>(res);
                 }
                 return;
-            } else if (n == 0) {
+            } else if (n == 0 && sum != 0) {
                 return;
             } else {
                 // Don't add in result
