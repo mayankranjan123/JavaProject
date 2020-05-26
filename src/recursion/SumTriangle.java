@@ -9,7 +9,7 @@ public class SumTriangle {
     }
 
     private static void sumTriangle(int[] a) {
-        if (a.length < 1) {
+        if (a.length == 0) {
             return;
         } else {
             int temp[] = new int[a.length - 1];

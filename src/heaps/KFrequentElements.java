@@ -1,8 +1,6 @@
 package heaps;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class KFrequentElements {
     public static void main(String[] args) {
@@ -18,7 +16,6 @@ public class KFrequentElements {
         }
         PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>((b, c) -> c.getValue() - b.getValue());
         pq.addAll(map.entrySet());
-
         int freq = 0;
         for (int i = 0; i < k && !pq.isEmpty(); i++) {
             freq =  pq.poll().getKey();

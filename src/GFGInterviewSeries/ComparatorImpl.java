@@ -27,6 +27,11 @@ public class ComparatorImpl {
     }
 
     public static void main(String[] args) {
+        Set<Integer> set = new HashSet<>();
+        set.add(2);
+        set.add(6);
+        set.add(4);
+
         Map<Integer, Integer> map = new HashMap<>();
         map.put(null, 8);
         System.out.println(map.get(null));
